@@ -1,0 +1,224 @@
+
+/*************** TOP POST ***************/
+#top_post {
+    position: relative;
+    display: inline-block;
+    width: 672px;
+    margin-top: 40px;
+    margin-bottom: 62px;
+    margin-left: 120px;
+}
+
+#top_post a {
+    text-decoration: none;
+}
+
+#new_label {
+    position: relative;
+    width: 37px;
+    left: 0;
+    /* margin-top: 40px; */
+
+    font-family: Circe Rounded;
+    font-size: 16px;
+    line-height: 20px;
+    /* identical to box height, or 125% */
+
+    display: flex;
+    align-items: center;
+    letter-spacing: -0.416667px;
+
+    color: #E9399C;
+}
+
+#top_post_title {
+    position: relative;
+    width: 672px;
+    left: 0;
+    margin-top: 10px;
+
+    font-family: Museo Cyrl;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 44px;
+    line-height: 128%;
+    /* or 56px */
+
+    display: flex;
+    align-items: center;
+    letter-spacing: -0.416667px;
+
+    color: #315AF2;
+}
+
+#top_post_subtitle {
+    position: relative;
+    width: 391px;
+    left: 0;
+    margin-top: 10px;
+
+    font-family: Circe Rounded;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 136%;
+    /* or 22px */
+
+    display: flex;
+    align-items: center;
+    letter-spacing: -0.416667px;
+
+    color: #000000;
+}
+
+#read_btn {
+    position: relative;
+    display: inline-block;
+    width: 150px;
+    height: 58px;
+    left: 0;
+    margin-top: 30px;
+    text-align: center;
+
+    background: #315AF2;
+    border-radius: 6px;
+}
+
+#read_btn:hover {
+    background: rgba(49, 90, 242, 0.75);
+}
+
+#read_btn_label {
+    position: relative;
+    display: inline-block;
+    width: 114px;
+    height: 38px;
+    /* left: 18px;
+    top: 10px; */
+
+    font-family: Museo Cyrl;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 58px;
+    align-items: center;
+    letter-spacing: -0.416667px;
+
+    color: #FFFFFF;
+
+    /* Inside Auto Layout */
+
+    flex: none;
+    order: 0;
+    align-self: center;
+    margin: auto;
+}
+
+#top_post_image {
+    position: relative;
+    display: inline-block;
+    margin-left: 4px;
+    height: 338px;
+    width: 464px;
+    vertical-align: top;
+    margin-top: 40px;
+    margin-bottom: 62px;
+
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+}
+
+
+/*************** LIST OF POSTS ***************/
+#list_of_posts {
+    position: relative;
+    margin-top: 60px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+#posts_label {
+    position: relative;
+    width: 231px;
+    height: 38px;
+    left: 119px;
+
+    font-family: Museo Cyrl;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 38px;
+    display: flex;
+    align-items: center;
+    letter-spacing: -0.416667px;
+
+    color: #315AF2;
+}
+
+.post {
+    position: relative;
+    display: inline-block;
+    width: 335px;
+    height: 300px;
+    text-align: center;
+    vertical-align: top;
+
+    background: #FFFFFF;
+    border: 2px solid #CDCDCD;
+    box-sizing: border-box;
+    border-radius: 3px;
+
+    margin-left: 98px;
+    margin-top: 32px;
+}
+
+.post_title {
+    position: relative;
+    width: 248px;
+    height: 87px;
+    margin-top: 35px;
+
+    font-family: Circe Rounded;
+    font-size: 24px;
+    line-height: 120%;
+    /* or 29px */
+
+    display: inline-block;
+    align-items: center;
+    text-align: center;
+    letter-spacing: -0.416667px;
+
+    color: #315AF2;
+}
+
+.post_img {
+    position: relative;
+    display: inline-block;
+    margin-top: 30px;
+    width: 217px;
+    height: 112px;
+
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+}
+
+.post_date {
+    position: absolute;
+    width: 95px;
+    height: 20px;
+    left: 20px;
+    top: 20px;
+
+    font-family: Circe Rounded;
+    font-size: 12px;
+    line-height: 20px;
+    /* identical to box height, or 167% */
+
+    display: flex;
+    align-items: center;
+    letter-spacing: -0.416667px;
+
+    color: #979797;
+}

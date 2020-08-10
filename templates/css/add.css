@@ -1,0 +1,181 @@
+body {
+    height: 900px;
+}
+
+#add_field {
+    position: relative;
+    width: 1200px;
+    height: 659px;
+    left: 120px;
+    margin-top: 59px;
+}
+
+#add_title {
+    font-family: Museo Cyrl;
+    font-size: 45px;
+    font-weight: bold;
+    line-height: 52px;
+    /* identical to box height, or 116% */
+
+    letter-spacing: -0.416667px;
+
+    color: #315AF2;
+}
+
+#id_title {
+    position: relative;
+    width: 873px;
+    height: 44px;
+    /* left: 120px; */
+    margin-top: 44px;
+
+    background: #FFFFFF;
+    border: 2px solid #CDCDCD;
+    border-radius: 3px;
+
+    font-family: Circe Rounded;
+    font-size: 24px;
+    line-height: 52px;
+    /* identical to box height, or 217% */
+
+    letter-spacing: -0.416667px;
+
+    color: #315AF2;
+}
+
+#id_title::placeholder {
+  color: color: #C4C4C4;
+}
+
+#submit_btn {
+    position: relative;
+    display: inline;
+    width: 159px;
+    height: 50px;
+    margin-left: 21px;
+    top: -3px;
+
+    background: #E9399C;
+    border-radius: 3px;
+    border: 0;
+
+    font-family: Museo Cyrl;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 22px;
+    /* identical to box height */
+
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+#submit_btn:hover {
+    background: rgba(233, 57, 156, 0.75);
+}
+
+#add_content {
+    position: relative;
+    display: inline-block;
+    margin-top: 37px;
+    vertical-align: top;
+}
+
+.tox-tinymce {
+    width: 881px;
+    height: 478px;
+
+    background: #FFFFFF;
+    border: 2px solid #CDCDCD;
+    box-sizing: border-box;
+    border-radius: 3px;
+}
+
+#image_block {
+    position: relative;
+    display: inline-block;
+    width: 294px;
+    margin-left: 21px;
+    margin-top: 37px;
+    text-align: center;
+    padding: 6px;
+
+    background: #FFFFFF;
+    border: 2px solid #CDCDCD;
+    box-sizing: border-box;
+    border-radius: 3px;
+}
+
+#load_label {
+    position: relative;
+    margin-top: 11px;
+
+    font-family: Circe Rounded;
+    font-size: 24px;
+    line-height: 31px;
+    /* identical to box height */
+
+    text-align: center;
+
+    color: #315AF2;
+}
+
+label[for="id_image"] {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    width: 155px;
+    height: 50px;
+    margin-top: 11px;
+    margin-bottom: 20px;
+
+    background: #315AF2;
+    border-radius: 3px;
+
+    font-family: Museo Cyrl;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 50px;
+    /* identical to box height */
+
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+label[for="id_image"]:hover {
+    background: rgba(49, 90, 242, 0.75);
+}
+
+label[for="id_image"].hide {
+    display: none;
+}
+
+#id_image {
+    display: none;
+}
+
+#image_preview_block {
+    position: relative;
+    display: block;
+    width: 278px;
+    margin-top: 4px;
+    margin-bottom: -4px;
+}
+
+#image_preview_block.hide {
+    display: none;
+}
+
+#image_preview {
+    position: relative;
+    width: 274px;
+    border: 2px solid #E5E5E5;
+}
+
+#cross {
+    position: absolute;
+    top: 13px;
+    right: 10px;
+    cursor: pointer;
+}
+

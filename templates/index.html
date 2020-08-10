@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block add_files %} <link rel="stylesheet" href="{% static 'css/index.css' %}"> {% endblock %}
+{% block title %} List of posts {% endblock %}
+
+{% block content %}
+    {% if posts %}
+        <div id="top_post">
+            <span id="new_label">NEW</span>
+            <div id="top_post_title">
+                {{ top_post.title }}
+            </div>
+            <div id="top_post_subtitle">
+                {{ top_post_start |safe }}
+            </div>
+            <a href="{% url 'post' top_post.id %}">
+                <div id="read_btn">
+                    <span id="read_btn_label">Читать</span>
+                </div>
+            </a>
+        </div>
+        <div id="top_post_image" style="background-image: url('{{ top_post.image.url }}');"></div>
+
+        <div class="line_breaker"></div>
+
+        <div id="list_of_posts">
+            <span id="posts_label">Другие статьи</span>
+            {% for post in posts %}
+                <a href="{% url 'post' post.id %}">
+                    <div class="post">
+                        <span class="post_date">{{ post.date }}</span>
+                        <div class="post_img" style="background-image: url('{{ post.image.url }}');"></div>
+                        <span class="post_title">{{ post.title }}</span>
+                    </div>
+                </a>
+            {% endfor %}
+        </div>
+    {% else %}
+        <p>There are no posts</p>
+    {% endif %}
+{% endblock %}

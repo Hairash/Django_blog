@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block add_files %} <link rel="stylesheet" href="{% static 'css/full_post.css' %}"> {% endblock %}
+{% block title %} Post {{ post_id }} {% endblock %}
+
+{% block content %}
+    <div id="post_field">
+        <div id="post_title">{{ post.title }}</div>
+        <div id="post_img" style="background-image: url('{{ post.image.url }}');">
+<!--            <img src="{{ post.image.url }}">-->
+        </div>
+        <div id="post_content">{{ post.content |safe }}</div>
+    </div>
+{% endblock %}

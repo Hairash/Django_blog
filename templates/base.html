@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+{% load static %}
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{% static 'css/base.css' %}">
+    <script src="{% static 'js/jquery-3.5.1.min.js' %}"></script>
+    {% block add_files %} {% endblock %}
+    <title> {% block title %} {% endblock %} </title>
+</head>
+<body>
+    <div id="header">
+        <a href="{% url 'index' %}">
+            <img id="logo" src="{% static 'img/Logo_Kodland.png' %}">
+        </a>
+        <a href="{% url 'index' %}">
+            <span id="blog_title">Блог</span>
+        </a>
+        <a href="{% url 'add' %}">
+            <div id="add_post_btn">
+                <span id="add_post_btn_label">+ Добавить статью</span>
+            </div>
+        </a>
+    </div>
+    <div class="line_breaker"></div>
+    {% block content %} {% endblock %}
+</body>
+</html>

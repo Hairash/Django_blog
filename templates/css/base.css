@@ -1,0 +1,114 @@
+@font-face {
+    font-family: Circe Rounded;
+    src: url('CirceRounded-Regular.otf');
+}
+
+@font-face {
+    font-family: Circe Rounded;
+    font-weight: bold;
+    src: url('CirceRounded-Bold.otf');
+}
+
+@font-face {
+    font-family: Museo Cyrl;
+    src: url('Museo Cyrl 500.otf');
+}
+
+@font-face {
+    font-family: Museo Cyrl;
+    font-weight: bold;
+    src: url('Museo Cyrl W00 900.ttf');
+}
+
+
+body {
+    position: relative;
+    width: 1440px;
+    height: 1970px;
+    margin: 0;
+
+    background: #FFFFFF;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/*************** HEADER ***************/
+#header {
+    position: relative;
+    //width: 1440px;
+    height: 80px;
+    background: #FFFFFF;
+}
+
+#logo {
+    position: absolute;
+    width: 129px;
+    height: 26px;
+    left: 120px;
+    top: 24px;
+}
+
+#blog_title {
+    position: absolute;
+    width: 46px;
+    height: 28px;
+    left: 269px;
+    top: 28px;
+
+    font-family: Circe Rounded;
+    font-size: 22px;
+    line-height: 26px;
+
+    color: #010101;
+}
+
+#add_post_btn {
+    display: flex;
+    flex-direction: row;
+
+    position: absolute;
+    width: 166px;
+    height: 32px;
+    left: 1158px;
+    top: 24px;
+
+    background: #315AF2;
+    border-radius: 6px;
+}
+
+#add_post_btn:hover {
+    background: rgba(49, 90, 242, 0.75);
+}
+
+#add_post_btn_label {
+    position: relative;
+    top: 2px;
+    width: 134px;
+    height: 20px;
+
+    font-family: Circe Rounded;
+    font-size: 16px;
+    line-height: 19px;
+
+    color: #FFFFFF;
+
+
+    /* Inside Auto Layout */
+
+    flex: none;
+    order: 0;
+    align-self: center;
+    margin: 10px 16px;
+}
+
+.line_breaker {
+    position: relative;
+    width: 1440px;
+    height: 0px;
+    left: 0px;
+
+    border: 1px solid #CDCDCD;
+}

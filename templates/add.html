@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block add_files %}
+    <script src="{% static 'js/tinymce/tinymce.min.js' %}"></script>
+    <script src="{% static 'js/image_onchage.js' %}"></script>
+    <link rel="stylesheet" href="{% static 'css/add.css' %}">
+<!--    <link rel="stylesheet" href="{% static 'css/tinymce.css' %}">-->
+{% endblock %}
+
+{% block title %} Add post {% endblock %}
+
+{% block content %}
+    <div id="add_field">
+        <div id="add_title">
+            Добавить статью
+        </div>
+        {{ form.media }}
+        <form action="{% url 'add' %}" method="POST" enctype="multipart/form-data">
+            {% csrf_token %}
+            {{ form.title }}
+            <input type="submit" id="submit_btn" value="Опубликовать">
+            <div id="add_content">
+                {{ form.content }}
+            </div>
+            <div id="image_block">
+                <div id="load_label">Загрузить изображение</div>
+                <label for="id_image" id="image_label">Файл</label>
+<!--                {% if form.image.image.url %}-->
+<!--                    Что-то случилось-->
+<!--                {% endif %}-->
+                {{ form.image }}
+                <div id="image_preview_block" class="hide">
+                    <img id="image_preview">
+                    <img id="cross" src="{% static 'img/cross.png' %}" onclick="close_image()">
+                </div>
+            </div>
+        </form>
+    </div>
+{% endblock %}

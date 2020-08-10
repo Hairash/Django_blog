@@ -1,0 +1,97 @@
+#id_content_ifr body {
+    font-family: Circe Rounded;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 17px;
+    line-height: 128%;
+    /* or 22px */
+}
+
+#id_content_ifr h1 {
+    font-family: Circe Rounded;
+    font-size: 24px;
+    line-height: 28px;
+    /* or 117% */
+
+    letter-spacing: -0.416667px;
+
+    color: #404040;
+}
+
+#id_content_ifr hr {
+    width: 180px;
+    size: 2px;
+    background: #404040;
+    margin-top: 46px;
+    margin-bottom: 46px;
+}
+
+#id_content_ifr blockquote {
+    width: 408px;
+    margin: 44px 99.5px 44px 99.5px;
+    font-family: Circe Rounded;
+    font-size: 24px;
+    line-height: 28px;
+    /* or 117% */
+
+    display: flex;
+    align-items: center;
+    letter-spacing: -0.416667px;
+
+    color: #404040;
+
+
+    /* Inside Auto Layout */
+
+    flex: none;
+    order: 0;
+    align-self: center;
+}
+
+#id_content_ifr blockquote:before {
+    position: static;
+    width: 25px;
+
+    content: "«";
+    font-family: Roboto;
+    font-style: italic;
+    font-weight: 900;
+    font-size: 48px;
+    line-height: 150%;
+    /* identical to box height, or 72px */
+
+
+    color: #404040;
+
+
+    /* Inside Auto Layout */
+
+    flex: none;
+    order: 0;
+    align-self: flex-start;
+    margin-right: 20px;
+}
+
+#id_content_ifr blockquote:after {
+    position: static;
+    width: 25px;
+
+    content: "»";
+    font-family: Roboto;
+    font-style: italic;
+    font-weight: 900;
+    font-size: 48px;
+    line-height: 150%;
+    /* identical to box height, or 72px */
+
+
+    color: #404040;
+
+
+    /* Inside Auto Layout */
+
+    flex: none;
+    order: 2;
+    align-self: flex-end;
+    margin-left: 20px;
+}
