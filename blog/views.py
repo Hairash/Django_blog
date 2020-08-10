@@ -6,8 +6,11 @@ from .forms import PostForm
 
 
 def index(request):
-    top_post = Post.objects.order_by('-date')[0]
-    top_post_start = top_post.content.splitlines()[0]
+    top_post = ''
+    top_post_start = ''
+    if Post.objects.all().count() > 0:
+        top_post = Post.objects.order_by('-date')[0]
+        top_post_start = top_post.content.splitlines()[0]
     return render(request, 'index.html', {
         'posts': Post.objects.order_by('-date')[1: 10],
         'top_post': top_post,

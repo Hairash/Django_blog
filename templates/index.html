@@ -5,7 +5,7 @@
 {% block title %} List of posts {% endblock %}
 
 {% block content %}
-    {% if posts %}
+    {% if top_post %}
         <div id="top_post">
             <span id="new_label">NEW</span>
             <div id="top_post_title">
@@ -37,6 +37,7 @@
             {% endfor %}
         </div>
     {% else %}
-        <p>There are no posts</p>
+        <p>Статей пока нет. Но вы можете создать первую</p>
     {% endif %}
+
 {% endblock %}
